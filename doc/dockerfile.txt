@@ -1,0 +1,10 @@
+*dockerfile.txt*  Syntax highlighting for Dockerfiles
+
+Author: Honza Pokorny <http://honza.ca>
+License: BSD
+
+INTRODUCTION                                                       *dockerfile* 
+
+Drop it on your Pathogen path and you're all set.
+
+ vim:tw=78:et:ft=help:norl:
