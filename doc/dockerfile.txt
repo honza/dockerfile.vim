@@ -3,8 +3,16 @@
 Author: Honza Pokorny <http://honza.ca>
 License: BSD
 
-INTRODUCTION                                                       *dockerfile* 
+INSTALLATION                                                     *installation*
 
 Drop it on your Pathogen path and you're all set.
+
+FEATURES                                                             *features*
+
+The syntax highlighting includes:
+
+* The directives (e.g. FROM)
+* Strings
+* Comments
 
  vim:tw=78:et:ft=help:norl:
