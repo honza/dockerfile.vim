@@ -10,7 +10,7 @@ endif
 let b:current_syntax = "dockerfile"
 
 syntax keyword dockerfileKeyword FROM MAINTAINER RUN CMD EXPOSE ENV ADD
-syntax keyword dockerfileKeyword ENTRYPOINT VOLUME
+syntax keyword dockerfileKeyword ENTRYPOINT VOLUME USER WORKDIR
 highlight link dockerfileKeyword Keyword
 
 syntax region dockerfileString start=/\v"/ skip=/\v\\./ end=/\v"/
