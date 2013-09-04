@@ -9,12 +9,14 @@ endif
 
 let b:current_syntax = "dockerfile"
 
-syntax keyword dockerfileKeyword FROM MAINTAINER RUN CMD EXPOSE ENV ADD
-syntax keyword dockerfileKeyword ENTRYPOINT VOLUME USER WORKDIR
+syntax case ignore
+
+syntax match dockerfileKeyword /\v^\s*(FROM|MAINTAINER|RUN|CMD|EXPOSE|ENV|ADD)\s/
+syntax match dockerfileKeyword /\v^\s*(ENTRYPOINT|VOLUME|USER|WORKDIR)\s/
 highlight link dockerfileKeyword Keyword
 
 syntax region dockerfileString start=/\v"/ skip=/\v\\./ end=/\v"/
 highlight link dockerfileString String
 
-syntax match dockerfileComment "\v#.*$"
+syntax match dockerfileComment "\v^\s*#.*$"
 highlight link dockerfileComment Comment
