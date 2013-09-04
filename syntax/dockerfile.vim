@@ -9,6 +9,8 @@ endif
 
 let b:current_syntax = "dockerfile"
 
+syntax case ignore
+
 syntax keyword dockerfileKeyword FROM MAINTAINER RUN CMD EXPOSE ENV ADD
 syntax keyword dockerfileKeyword ENTRYPOINT VOLUME USER WORKDIR
 highlight link dockerfileKeyword Keyword
