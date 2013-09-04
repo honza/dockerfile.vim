@@ -18,5 +18,5 @@ highlight link dockerfileKeyword Keyword
 syntax region dockerfileString start=/\v"/ skip=/\v\\./ end=/\v"/
 highlight link dockerfileString String
 
-syntax match dockerfileComment "\v#.*$"
+syntax match dockerfileComment "\v^\s*#.*$"
 highlight link dockerfileComment Comment
