@@ -11,8 +11,8 @@ let b:current_syntax = "dockerfile"
 
 syntax case ignore
 
-syntax keyword dockerfileKeyword FROM MAINTAINER RUN CMD EXPOSE ENV ADD
-syntax keyword dockerfileKeyword ENTRYPOINT VOLUME USER WORKDIR
+syntax match dockerfileKeyword /\v^\s*(FROM|MAINTAINER|RUN|CMD|EXPOSE|ENV|ADD)\s/
+syntax match dockerfileKeyword /\v^\s*(ENTRYPOINT|VOLUME|USER|WORKDIR)\s/
 highlight link dockerfileKeyword Keyword
 
 syntax region dockerfileString start=/\v"/ skip=/\v\\./ end=/\v"/
