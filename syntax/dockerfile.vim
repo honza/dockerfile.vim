@@ -11,7 +11,7 @@ let b:current_syntax = "dockerfile"
 
 syntax case ignore
 
-syntax match dockerfileKeyword /\v^\s*(FROM|MAINTAINER|RUN|CMD|EXPOSE|ENV|ADD)\s/
+syntax match dockerfileKeyword /\v^\s*(FROM|MAINTAINER|RUN|CMD|EXPOSE|ENV|ADD|COPY)\s/
 syntax match dockerfileKeyword /\v^\s*(ENTRYPOINT|VOLUME|USER|WORKDIR)\s/
 highlight link dockerfileKeyword Keyword
 
